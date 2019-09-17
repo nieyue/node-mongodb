@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<script src="/javascripts/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>大图添加</div>
+			<input type="text" id="name" placeholder="标题">
+			<input type="text" id="imgAddress" placeholder="图片地址">
+			<input type="text" id="url" placeholder="跳转地址">
+			<button id="createSwiper">添加大图</button>
+
+		</div>
+
+		<div>
+			<div>成长营添加</div>
+			<input type="text" id="name2" placeholder="标题">
+			<input type="text" id="imgAddress2" placeholder="图片地址">
+			<input type="text" id="url2" placeholder="跳转地址">
+			<input type="text" id="oldPrice2" placeholder="原价">
+			<input type="text" id="price2" placeholder="现价">
+			<input type="text" id="speaker2" placeholder="主讲人">
+			<button id="createApi">添加成长营</button>
+			
+		</div>
+
+		<div>
+			<div>今日特惠添加</div>
+			<input type="text" id="name3" placeholder="标题">
+			<input type="text" id="imgAddress3" placeholder="图片地址">
+			<input type="text" id="url3" placeholder="跳转地址">
+			<button id="createToday">添加今日特惠</button>
+			
+		</div>
+		<script type="text/javascript">
+		
+			$("#createSwiper").on("click",function(){
+				var obj={
+					name:$("#name").val(),
+					imgAddress:$("#imgAddress").val(),
+					url:$("#url").val(),
+				}
+			$.post("http://127.0.0.1:3000/swiperCreate",obj,
+				function(res){
+				alert("添加成功")
+			})
+		})
+			$("#createApi").on("click",function(){
+			$.post("http://127.0.0.1:3000/apiCreate",
+				{
+					name:$("#name2").val(),
+					imgAddress:$("#imgAddress2").val(),
+					url:$("#url2").val(),
+					oldPrice:$("#oldPrice2").val(),
+					price:$("#price2").val(),
+					speaker:$("#speaker2").val(),
+				},
+				function(res){
+				alert("添加成功")
+			})
+		})
+
+				$("#createToday").on("click",function(){
+				var obj={
+					name:$("#name3").val(),
+					imgAddress:$("#imgAddress3").val(),
+					url:$("#url3").val(),
+				}
+			$.post("http://127.0.0.1:3000/todayItemCreate",obj,
+				function(res){
+				alert("添加成功")
+			})
+		})
+			
+		</script>
+	</body>
+</html>

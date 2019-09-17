@@ -1,0 +1,60 @@
+[
+	{
+		"shop":{
+			"shop_name":"齐德电脑",
+			"shop_zhekou":"0.8",
+			"shop_goods":[
+				{
+					"goods_name":"锐龙 CPU",
+					"goods_price":"1779",
+					"goods_color":"标配版",
+					"goods_img":"img/1.jpg"
+				},
+				{
+					"goods_name":"映泰 主板",
+					"goods_price":"1366",
+					"goods_color":"标配版",
+					"goods_img":"img/2.jpg"
+				},
+				{
+					"goods_name":"蓝宝石 显卡",
+					"goods_price":"799",
+					"goods_color":"白金版",
+					"goods_img":"img/3.jpg"
+				},
+				{
+					"goods_name":"蓝宝石 显卡",
+					"goods_price":"549",
+					"goods_color":"铁骑黑",
+					"goods_img":"img/4.jpg"
+				}
+			]
+		}
+	},
+	{
+		"shop":{
+			"shop_name":"大兴电脑",
+			"shop_zhekou":"0.9",
+			"shop_goods":[
+				{
+					"goods_name":"西部数据(WD)蓝盘",
+					"goods_price":"329",
+					"goods_color":"标配版",
+					"goods_img":"img/5.jpg"
+				},
+				{
+					"goods_name":"爱国者机箱",
+					"goods_price":"219",
+					"goods_color":"亮黑色",
+					"goods_img":"img/7.jpg"
+				},
+				{
+					"goods_name":"AOC 显示器",
+					"goods_price":"849",
+					"goods_color":"亮白色",
+					"goods_img":"img/10.jpg"
+				}
+			]
+		}
+	}
+]
